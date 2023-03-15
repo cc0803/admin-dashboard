@@ -89,6 +89,7 @@ i {
 
 
 .action-button {
+    font-size: max(14px, 1.5vw);
     width: 7vw;
     height: 5vh;
     display: flex;
@@ -106,4 +107,35 @@ i {
 .flex-container span:first-of-type{
     font-size: 1.5vh;
     margin-left: 0.1vh;
+}
+
+.logo {
+    width: 80%;
+    text-align: start;
+    font-size: 3.5vh;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+}
+
+li {
+    padding: 0.5rem 0.2rem;
+}
+
+.sidebar>.flex-container {
+    padding: 1.5rem 0.5rem;
+    width: 100%;
+    flex-direction: column;
+    color: var(--zero);
+    font-size: 2.5vh;
+}
+
+.sidebar i {
+    padding-right: 0.5rem;
+    width: max(20px, 2vw);
+    font-size: max(15px, 2.5vh);
 }
