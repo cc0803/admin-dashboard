@@ -11,6 +11,7 @@
     --seven: #0369a1;
     --eight: #075985;
     --nine: #0c4a6e;
+    --subtext: #666;
 }
 
 * {
@@ -26,7 +27,7 @@ body {
 }
 
 .grid-container {
-    width: 100vw;
+    width: 99.2vw;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -152,13 +153,16 @@ li {
     display: grid;
     grid-auto-rows: 1fr;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 1rem;
+    gap: 1.5rem;
     margin: 1rem;
 }
 
-.section-heading {
-    margin: 1rem;
+.section {
     place-self: flex-end flex-start;
+}
+
+.heading {
+    margin: 1rem;
     font-size: 1.5rem;
 }
 
@@ -181,7 +185,7 @@ li {
     background-color: var(--zero);
     padding: 1rem;
     border-radius: 0 10px 10px 0;
-    color: #555;
+    color: var(--subtext);
     overflow: hidden;  
 }
 
@@ -190,4 +194,47 @@ li {
     font-weight: 700;
     font-size: calc(12px + 0.5vw);
     color: #000;
+}
+
+.news {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.news>.heading {    
+    margin: 0;
+}
+
+.announcements-article {
+    background-color: var(--zero);
+    margin: 1rem 1.5rem 0 0;
+    border-radius: 10px;
+}
+
+.announcement {
+    margin: 1rem 2rem;  
+    border-bottom: 1px solid var(--subtext); 
+}
+
+.announcements-article .announcement:first-child {
+    margin-top: 2rem;
+}
+
+.announcements-article .announcement:last-child {
+    margin-bottom: 2rem;
+    border-bottom: 0px;
+}
+
+h3 {
+    margin: 0;
+    font-size: calc(10px + 0.5vw);
+}
+
+p {
+    margin: 0;
+    margin-bottom: 1rem;
+    color: var(--subtext);
+    font-size: calc(8px + 0.4vw);  
 }
