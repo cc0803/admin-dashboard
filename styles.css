@@ -247,3 +247,20 @@ p {
     margin-left: 0;
     margin-top: 3rem;
 }
+
+.trend {
+    margin: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.description {
+    margin: 0 1rem;   
+    color: var(--subtext);
+}
+
+.description>span {    
+    display: block;
+    font-size: 1.1rem;
+    color: black;
+}
